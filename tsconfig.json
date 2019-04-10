@@ -18,7 +18,7 @@
     "inlineSourceMap": true,
     "inlineSources": true,
     "baseUrl": ".",
-    "module": "es6",
+    "module": "esNext",
     "paths": {
       "dpm-ember/tests/*": [
         "tests/*"
@@ -29,7 +29,8 @@
       "*": [
         "types/*"
       ]
-    }
+    },
+    "experimentalDecorators": true
   },
   "include": [
     "app/**/*",
