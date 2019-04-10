@@ -1,6 +1,7 @@
 import Component from '@ember/component';
+import { Moment } from 'moment'; // this line causes moment to be included in the main vendor instead of lazily loaded
 
-function mapTime(moment: any) {
+function mapTime(moment: Moment) {
   return moment.format('HH:mm:ss');
 }
 export default class Lazyload extends Component.extend({
